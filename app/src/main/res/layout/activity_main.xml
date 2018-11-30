@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_splash_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_splash"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#83000000"
+            android:clickable="false"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="270dp"
+                android:layout_height="270dp"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_launcher_foreground" />
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>
